@@ -16,8 +16,7 @@ async function loadComponent({ type, data }, x, y) {
       throw { message: data };
     } else if (type === "component") {
       const node = await figma.importComponentByKeyAsync(data);
-      const cloned = node.clone();
-      console.log(x, y);
+      const cloned = node.createInstance();
       cloned.x = x !== undefined ? x : figma.viewport.center.x;
       cloned.y = y !== undefined ? y : figma.viewport.center.y;
     }
