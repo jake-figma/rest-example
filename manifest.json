@@ -1,0 +1,9 @@
+{
+  "name": "REST",
+  "id": "1128795550806441379",
+  "api": "1.0.0",
+  "editorType": ["figma", "figjam"],
+  "permissions": [],
+  "main": "code.js",
+  "ui": "ui.html"
+}
